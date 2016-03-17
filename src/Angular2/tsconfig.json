@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "noEmit": true,
+    "sourceMap": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "module": "system",
+    "moduleResolution": "node",
+    "target": "es6"
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="lib/material.min.js"></script>
+    <link rel="stylesheet" href="assets/material.deep_orange-pink.min.css">
+    <link rel="stylesheet" href="assets/sprite-av-white.css">
+    <link rel="stylesheet" href="assets/animate.css">
+    <link rel="stylesheet" href="assets/app.css">
+
+    <!-- IE required polyfills, in this exact order -->
+    <script src="lib/es6-shim.js"></script>
+    <script src="lib/system-polyfills.js"></script>
+    <script src="lib/shims_for_IE.js"></script>
+
+    <!-- Angular polyfill required everywhere -->
+    <script src="lib/typescript.js"></script>
+    <script src="lib/angular2-polyfills.js"></script>
+    <script src="lib/system.js"></script>
+    <script src="lib/rx.js"></script>
+    <script src="lib/angular2.dev.js"></script>
+    <script src="lib/router.dev.js"></script>
+    <script src="lib/http.js"></script>
+    <script src="lib/web-api.js"></script>
+    <script>
+        System.config({
+            transpiler: 'typescript',
+            typescriptOptions: { emitDecoratorMetadata: true },
+            packages: {
+                'api': { defaultExtension: 'ts' },
+                'app': { defaultExtension: 'ts' }
+            }
+        });
+        System.import('app/main')
+              .then(null, console.error.bind(console));
+    </script>
+</head>
+<body>
+    <story-app>Loading Storyline Tracker ...</story-app>
+</body>
+</html>
