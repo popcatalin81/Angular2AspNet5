@@ -26,7 +26,8 @@ var libs = [
 	paths.npm + "a2-in-memory-web-api/web-api.js",
 	paths.npm + "typescript/lib/typescript.js",
 	paths.npm + "angular2/ts/src/testing/shims_for_IE.js",
-	paths.npm + "material-design-lite/dist/material.min.js"
+	paths.npm + "material-design-lite/dist/material.min.js",
+	paths.npm + "reflect-metadata/temp/Reflect.js"
 ];
 
 var assets = [
