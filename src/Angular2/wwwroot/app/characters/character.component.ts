@@ -5,8 +5,6 @@ import { Observable, Subscription } from 'rxjs/Rx';
 import { EntityService, ModalService, ToastService } from '../blocks/blocks';
 import { Character, CharacterService } from '../characters/character.service';
 
-declare var componentHandler;
-
 @Component({
   selector: 'story-character',
   templateUrl: 'app/characters/character.component.html',

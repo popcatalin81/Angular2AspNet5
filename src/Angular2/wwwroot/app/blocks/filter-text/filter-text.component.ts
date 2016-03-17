@@ -1,5 +1,4 @@
 import { Component, EventEmitter, Input, Output } from 'angular2/core';
-declare var componentHandler;
 
 @Component({
   selector: 'filter-text',

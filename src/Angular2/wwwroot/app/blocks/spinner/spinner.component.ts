@@ -2,7 +2,7 @@ import {Component, OnDestroy, OnInit} from 'angular2/core';
 import { Subscription } from 'rxjs/Rx';
 
 import { ISpinnerState, SpinnerService } from './spinner.service';
-declare var componentHandler;
+
 const ACTIVE_CLASS = 'is-active';
 
 @Component({
